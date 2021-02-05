@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>apollobot</class>
+ <widget class="QTabWidget" name="apollobot">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>674</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Apollo Bot</string>
+  </property>
+  <property name="toolTip">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(52, 52, 57);
+border-color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <property name="usesScrollButtons">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="Inicial">
+   <attribute name="title">
+    <string>Inicial</string>
+   </attribute>
+   <widget class="QLineEdit" name="email">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>251</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(52, 101, 164);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Digite seu email</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="senha">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>251</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(52, 101, 164);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Digite sua senha</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="conectar">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>270</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Conectar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>261</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Droid Sans Fallback</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Robô de Operações</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>80</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CodeTrader inc.</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="modalidade">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>130</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-color: rgb(114, 159, 207);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Simulação</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Real</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QSpinBox" name="entrada">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>130</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">alternate-background-color: rgb(136, 138, 133);</string>
+    </property>
+    <property name="specialValueText">
+     <string>Entrada</string>
+    </property>
+    <property name="maximum">
+     <number>150000</number>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="direcao">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>180</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-color: rgb(114, 159, 207);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Compra</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Venda</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>180</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(52, 101, 164);</string>
+    </property>
+    <property name="placeholderText">
+     <string>Paridade</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="efetuar">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>270</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Efetuar</string>
+    </property>
+   </widget>
+   <zorder>label_3</zorder>
+   <zorder>email</zorder>
+   <zorder>senha</zorder>
+   <zorder>conectar</zorder>
+   <zorder>label_4</zorder>
+   <zorder>modalidade</zorder>
+   <zorder>entrada</zorder>
+   <zorder>direcao</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>efetuar</zorder>
+  </widget>
+  <widget class="QWidget" name="entradas">
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <attribute name="title">
+    <string>Entradas</string>
+   </attribute>
+  </widget>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+  <include location="teste.qrc"/>
+  <include location="sem cor.qrc"/>
+ </resources>
+ <connections/>
+</ui>
